@@ -1,0 +1,679 @@
+:root {
+    --primary-color: #ff5722;
+    --secondary-color: #2196f3;
+    --accent-color: #ffeb3b;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --nav-background-color: #505050;
+    --footer-background-color: #505050;
+    --btn-hover-color: #575757;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--nav-background-color);
+    color: #f88d00;
+    padding: 10px 20px;
+}
+
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: rgba(231, 12, 12, 0);
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+}
+
+.dropbtn .bar1, .dropbtn .bar2, .dropbtn .bar3 {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(255, 74, 2);
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--nav-background-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--secondary-color);
+}
+
+.menu-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.brand-name {
+    color: rgb(255, 94, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-content {
+    max-width: 100%;
+    margin: 0 auto;
+    background: url('/Planet/img/cir.jpg') no-repeat center center/cover;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.header-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.header-content .btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.header-content .btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.equipo{
+    background: url('/Planet/img/pc.jpg') no-repeat center center/cover;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 100px 100px;
+    color: #f0f0f0;
+}
+
+.equipo{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cctv{
+    background: url('/Planet/img/cctv.jpg') no-repeat center center/cover;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 100px 100px;
+    color: var(--primary-color);
+}
+
+.cctv{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.ventas{
+    background: url('/Planet/img/ventas.jpg') no-repeat center center/cover;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 100px 100px;
+    color: var(--primary-color);
+}
+
+.ventas{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.soportec{
+    background: url('/Planet/img/aa.avif') no-repeat center center/cover;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 100px 100px;
+}
+
+.equipo{
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.soporte-card {
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.soporte-card h2, p {
+    position: relative;
+    z-index: 2;
+}
+
+.soporte-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#reparacion-consolas {
+    background-image: url('/Planet/img/soporte-con');
+}
+
+#actualizacion-software {
+    background-image: url('/Planet/img/Actualizacion.webp');
+}
+
+#mantenimiento-preventivo {
+    background-image: url('/Planet/img/mante.jpeg');
+}
+
+#incorporacion-juegos {
+    background-image: url('/Planet/img/juegos.jpg');
+
+
+}
+#Mantenimiento-Correctivo-y-Preventivo {
+    background-image: url('/Planet/img/equipore.avif');
+}
+
+#Laboratorio-Tecnico {
+    background-image: url('/Planet/img/reparar.jpg');
+}
+
+#Venta-De-Equipos {
+    background-image: url('/Planet/img/venta.jpg');
+}
+
+#Instalacion-de-Software {
+    background-image: url('/Planet/img/instalacion.png');
+}
+
+.soporte-card:hover {
+    transform: translateY(-10px);
+}
+
+.about-section, .services-section, .contact-section, .login-section{
+    background: url('/Planet/img/ff.avif') no-repeat center center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.about-section h2, .services-section h2, .contact-section h2, .login-section h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.services-section .service{
+    background-color: #000;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: end;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    background-color: #ffffff;
+    transition: transform 0.3s;
+    
+}
+
+.catalog {
+    display: inline-block;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    background: #07182E;
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    position: absolute;
+    top: 5px;
+    left: 5;
+    width: 98%;
+    height: 50%;
+    object-fit: cover;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.card h2 {
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.card p {
+    z-index: 1;
+    color: #ddd;
+    margin: 5px 10px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.card .btn {
+    color: white;
+    text-decoration: none;
+    background-color: #0d6efd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+    height: 130%;
+    animation: rotBGimg 3s linear infinite;
+    transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    background: #feffff;
+    inset: 5px;
+    border-radius: 15px;
+}
+
+.services-section .service:hover {
+    transform: scale(1.05);
+}
+
+.services-section .service img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+.login-section form {
+    max-width: 600px;
+    margin: 20PX auto;
+    text-align: left;
+}
+.contact-section form label, .login-section form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-ingresar {
+    width: 100px;
+    padding: 8px 12px;
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin: 20PX auto;
+}
+
+.btn-ingresar:hover {
+    background-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--footer-background-color);
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.footer-section {
+    max-width: 300px;
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+    color: #f36e21;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: #f36e21;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .dropdown-content {
+        width: 100%;
+    }
+
+    .services-section .service {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+#login {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(199, 30, 30, 0.1);
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+#login h1 {
+    margin-bottom: 20px;
+}
+
+#login form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login label {
+    margin-bottom: 5px;
+}
+
+#login input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#login .links {
+    display: block;
+    margin-bottom: 5px;
+    color:#2196f3;
+}
+
+#login form .links a {
+    color: #2196f3;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        display: none;
+    }
+    
+    nav .menu-icon {
+        display: block;
+    }
+    
+    nav ul.show {
+        display: block;
+        position: absolute;
+        background-color: #020202;
+        width: 100%;
+        top: 50px;
+        left: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+footer {
+    background-color: var(--footer-background-color);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+}
+
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+
+.service-card{
+    max-width: 100%;
+}  
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.producto:hover img {
+    transform: scale(1.1);
+}
+
+.producto h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.producto .descripcion {
+    font-size: 0.9em;
+    color: #555;
+    margin: 10px;
+}
+
+.producto .precio {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+}
+
+.boton-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.boton-comprar:hover {
+    background-color: #218838;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
